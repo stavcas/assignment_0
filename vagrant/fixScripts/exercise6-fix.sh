@@ -10,8 +10,8 @@ then
         (server1) DEST_HOST="server2";;
         (server2) DEST_HOST="server1";;
     esac
-    cat ~/.ssh/id_rsa | sudo tee /root/.ssh/id_rsa > /dev/null && sudo chmod 600 /root/.ssh/id_rsa > /dev/null
-    cat ~/.ssh/authorized_keys | sudo tee -a /root/.ssh/authorized_keys > /dev/null && sudo chmod 600 /root/.ssh/authorized_keys > /dev/null
+    cat /home/vagrant/.ssh/id_rsa | sudo tee /root/.ssh/id_rsa > /dev/null && sudo chmod 600 /root/.ssh/id_rsa > /dev/null
+    cat /home/vagrant/.ssh/authorized_keys | sudo tee /root/.ssh/authorized_keys > /dev/null && sudo chmod 600 /root/.ssh/authorized_keys > /dev/null
     
     scp -q $FILES $USER@$DEST_HOST:$DEST$SOURCE
     echo $(du -b -c $FILES | tail -1 | cut -f1)
