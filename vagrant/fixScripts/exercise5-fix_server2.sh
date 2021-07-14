@@ -1,32 +1,4 @@
 #!/bin/bash
-#add fix to exercise5-server2 here
 echo '   StrictHostKeyChecking no
    UserKnownHostsFile=/dev/null
-   LogLevel ERROR' | sudo tee -a /etc/ssh/ssh_config
-echo '-----BEGIN RSA PRIVATE KEY-----
-MIIEowIBAAKCAQEAoLuz7ln5JxdSvt2Zv+witNsfUTlinuMABFCrD1ick85+IroL
-qwLPGr4kvYLTwRoyn8cFncgAJNdai/OnY5bjv3p+HEjW0YQrORPSH1ZVNOjnusOw
-+Jn4Sy2PJWfN6scxJM5viI7qx1lW84Be8mOItiNBCwnyE7pElNNQ5xNyh+lixAYg
-9xC6/2O3dIZdbD0bjkc4vFmHoE+BS/5s7Z1r2NWa9x4k9pwcxbp/eFe85cyJeKGy
-hH5wMWM8pGuTWqXFHyg/FC7Pg6E504fFX8IK5zCsnZtWIGCSdF/AQJZdNMrKVf29
-Wcwha4GVao0Znk/4/oueTGHJ3Gyco14Sk8SzaQIDAQABAoIBAHX7kgYBkTu6iQiF
-TVhtksRCm+hZQSTz541DUW1AVB7C0h/XhL0QoMk2jW12XM0/160kv+CjcEeatGJK
-hbI6jg59cZh9dwHwDHInNHPAQWdHFuImxv6UtocoeAyy95nAgThNN917Wqbd00+G
-CSvPGAjqM9JQiJsmfTTpMFeOFOHhqsHlov1Cbh5Xc+lU32NgoyXrS7wYNsEABUpD
-84ewwI+p/yZyTWLIVoQDsCFuUvSYdAawQVBNoTAgqoSOYA09usvqDa8/g36HQcY6
-qJEk+0+ER7706YvnCtSfHScht3LwJ9kQBOwuyvgrjU9pdBAlxfJN4BfBNDlbMgB6
-RsEDJSECgYEAzhYgLMTpsE2v0HuBWzbdjGpvgihIpJj10yQHi95DPS5HwbrhzgNn
-/lB/quIGOWtXl1Nj8yKSRmTtdZPR0x3Z3Fzy/ixRU83o8ewBEadjrj2ZYin2WwCZ
-bsNBw2PBRDLprBQL61hZVeO9bqdPwJImHEFOCAum1qHXb/dC8mbL2uUCgYEAx6mQ
-fA0V4K51d9UomHTpru2dBJtNt/h9A5kQCmkaxNw+emm6PQ9gpJ+vLkKxUj+y9dUj
-ponUUI09jpXxq72k0RGfbo7W4WpqXFTUQ+IEh/+vijVV/BacafL8667pxjXv6yyw
-4DaUoljI1lEGF2GeTEd22w1ev53+Mapphv4OujUCgYEAwwFCrrohGjdYfqDvFR2E
-ZAKuwu1VV5J5QbIdBedpnnG1aoZodiTY+Va4hzzagOimeEVrFTyIRt3np9MYv3jG
-lnLJZ2MODYuQuaIEnOzUMKKPCckFGLUnehx+lOFGlj7Kx44sfSQbXF9j91mP6Hsi
-XqgYqxpDY2K+1W6VxYMpsFUCgYAWXWMG0jxqH4Ce/KyAb1AhvRICixbojZgLSCDo
-2Z8bAASrl5456rgLmKt5xhSwvtvf95D3vaafo0KK7zbT4vlMReoS60McmtvxHbtt
-IysYxMY3+AN6qlm48HPuPniHMFGAiVACvXpmuQU+JHNHOTMPHk4s+VFsq1jm3UzW
-xyyFJQKBgBdb9WICD18Wm1UZ7vFwYueO4kAeyPLaTN2gHYzDnp7HhH90XMWTn45N
-8asiCcxqJ3HOmjDOGWn3+IH9NXWY0GZ7wyjpeZAhrQYoyox4wVF38OXoqFtwqeWT
-tqb/CCBVcqlg1K8gt7U9O/oXv+ErxmfFss+Nf7TpbKW7RUSnGfB8
------END RSA PRIVATE KEY-----' > ~/.ssh/id_rsa && chmod 600 ~/.ssh/id_rsa 
+   LogLevel ERROR' | sudo tee -a /etc/ssh/ssh_config > /dev/null
