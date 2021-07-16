@@ -1,2 +1,4 @@
 #!/bin/bash
-#add fix to exercise5-server1 here
+echo '   StrictHostKeyChecking no
+   UserKnownHostsFile=/dev/null
+   LogLevel ERROR' | sudo tee -a /etc/ssh/ssh_config  > /dev/null
